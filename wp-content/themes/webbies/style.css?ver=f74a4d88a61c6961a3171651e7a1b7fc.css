@@ -1,0 +1,959 @@
+/*Theme Name: Webbies */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+@font-face {
+	font-family: 'geogrotesque-medium-webfont';
+	src: url(fonts/geogrotesque-medium-webfont.otf);
+	src: url(fonts/geogrotesque-medium-webfont.eot) format("embedded-opentype"), url(fonts/geogrotesque-medium-webfont.woff2.html) format("woff2"), url(fonts/geogrotesque-medium-webfont.woff) format("woff"), url(fonts/geogrotesque-medium-webfont.ttf) format("truetype"), url(fonts/geogrotesque-medium-webfont.svg) format("svg")
+}
+@font-face {
+	font-family: 'Georgia';
+	src: url(fonts/Georgia.otf);
+	src: url(fonts/Georgia.eot) format("embedded-opentype"), url(fonts/Georgia.woff2.html) format("woff2"), url(fonts/Georgia.woff) format("woff"), url(fonts/Georgia.ttf) format("truetype"), url(fonts/Georgia.svg) format("svg")
+}
+@font-face {
+	font-family: 'geogrotesque-light-webfont';
+	src: url(fonts/geogrotesque-light-webfont.otf);
+	src: url(fonts/geogrotesque-light-webfont.eot) format("embedded-opentype"), url(fonts/geogrotesque-light-webfont.woff2.html) format("woff2"), url(fonts/geogrotesque-light-webfont.woff) format("woff"), url(fonts/geogrotesque-light-webfont.ttf) format("truetype"), url(fonts/geogrotesque-light-webfont.svg) format("svg")
+}
+@font-face {
+	font-family: 'geogrotesque-semibold-webfont';
+	src: url(fonts/geogrotesque-semibold-webfont.otf);
+	src: url(fonts/geogrotesque-semibold-webfont.eot) format("embedded-opentype"), url(fonts/geogrotesque-semibold-webfont.woff2.html) format("woff2"), url(fonts/geogrotesque-semibold-webfont.woff) format("woff"), url(fonts/geogrotesque-semibold-webfont.ttf) format("truetype"), url(fonts/geogrotesque-semibold-webfont.svg) format("svg")
+}
+@font-face {
+	font-family: 'tisa';
+	src: url(fonts/tisa.otf);
+	src: url(fonts/tisa.eot) format("embedded-opentype"), url(fonts/tisa.woff2.html) format("woff2"), url(fonts/tisa.woff) format("woff"), url(fonts/tisa.ttf) format("truetype"), url(fonts/tisa.svg) format("svg")
+}
+@font-face {
+	font-family: 'tisapro';
+	src: url(fonts/tisapro.otf);
+	src: url(fonts/tisapro.eot) format("embedded-opentype"), url(fonts/tisapro.woff2.html) format("woff2"), url(fonts/tisapro.woff) format("woff"), url(fonts/tisapro.ttf) format("truetype"), url(fonts/tisapro.svg) format("svg")
+}
+body {
+	font-family: geogrotesque-medium-webfont;
+	font-weight: 300;
+	font-size: 2em;
+	position: relative;
+	overflow-x: hidden
+}
+.body_c {
+	background: #f0f7f7
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: geogrotesque-medium-webfont;
+	font-weight: 100;
+	margin: 0
+}
+.bdy_with {
+	width: 75%;
+	border: 1px solid #F0F
+}
+header .navbar {
+	padding: 0;
+	transition: all .5s ease-out
+}
+header .navbar-default {
+	background-color: transparent;
+	border: none
+}
+header .navbar-default .navbar-nav a {
+	color: #fff;
+	padding: 5px 8px
+}
+header .navbar-default .navbar-nav a:hover {
+	color: #EEC856
+}
+header .navbar-default .navbar-nav .active a {
+	font-weight: 700;
+	color: #EEC856;
+	background: transparent;
+	border-bottom: 4px solid #EEC856;
+	text-shadow: none
+}
+header .navbar-default .navbar-nav .active a:hover {
+	color: #E15D5F;
+	background: transparent;
+	text-shadow: none
+}
+header .navbar-brand {
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	height: auto
+}
+header .navbar-brand h1 {
+	color: #fff;
+	margin: 0;
+	font-size: 1.8em;
+	font-weight: 400;
+	padding-left: 105px
+}
+header .navbar-brand span.subhead {
+	display: block;
+	font-family: "Roboto Slab", serif;
+	font-size: .6em;
+	font-weight: 100
+}
+header .navbar-toggle {
+	background-color: #279182
+}
+header .navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff
+}
+@media only screen and (max-width: 768px) {
+header .navbar-collapse.in {
+	background-color: rgba(0,0,0,.5)
+}
+}
+header .navbar.inbody {
+	padding-top: 0;
+	padding-bottom: 0
+}
+header .navbar.inbody .navbar-nav {
+	padding-top: 55px
+}
+header .inbody .navbar-brand {
+	background-size: 43px;
+	background-position: top left;
+	margin-top: 45px;
+	padding-bottom: 0;
+	margin-left: 75px
+}
+header .inbody .navbar-brand h1 {
+	font-size: 1.1em;
+	padding-left: 38px
+}
+header .inbody .navbar-brand span.subhead {
+	display: none
+}
+.carousel.fade {
+	opacity: 1
+}
+.carousel.fade .item {
+	transition: opacity ease-out .7s;
+	left: 0;
+	opacity: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	display: block
+}
+.carousel.fade .item:first-child {
+	top: auto;
+	opacity: 0;
+	position: relative
+}
+.carousel.fade .item.active {
+	opacity: 1
+}
+.carousel-control.right, .carousel-control.left {
+	background-image: none
+}
+#featured .item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%
+}
+.page {
+	padding: 50px 0
+}
+.page h2 {
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 30px
+}
+.page h3 {
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 30px
+}
+#mission {
+	background-color: #2em #fff
+}
+.service {
+	margin: 20px 0;
+	text-align: center
+}
+#services img.icon {
+	display: block;
+	width: 80px;
+	margin: 0 auto;
+	margin-bottom: 5px
+}
+#services h3 {
+	margin-bottom: 10px
+}
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+.service p {
+	padding: 0 20%
+}
+}
+#staff {
+	background-color: #fff
+}
+.doctor {
+	margin: 10px 0
+}
+.doctor h3 {
+	font-weight: 600;
+	font-size: 1.2em;
+	color: #6F4E36;
+	padding-bottom: 5px
+}
+.doctor p {
+	font-size: .8em
+}
+.doctor img {
+	width: 100%
+}
+#testimonials {
+	padding: 0
+}
+#testimonials h2 {
+	display: none
+}
+#testimonials blockquote {
+	margin: 0;
+	padding: 0;
+	border-left: none;
+	min-height: 500px;
+	position: relative
+}
+#testimonials blockquote .quote {
+	background-color: rgba(255,255,255,.6);
+	padding: 20px 5%;
+	position: absolute;
+	bottom: 0;
+	width: 75%;
+	font-weight: 400;
+	border-radius: 0 50px 0 0
+}
+#testimonials blockquote .quote:hover {
+	background-color: rgba(239,240,196,.9)
+}
+#testimonials #janeh {
+	background: url(http://webbies.co/wp-content/themes/webbies/images/testimonial-janeh.jpg) no-repeat center center;
+	background-size: cover
+}
+#testimonials #johnb {
+	background: url(http://webbies.co/wp-content/themes/webbies/images/testimonial-johnb.jpg) no-repeat center center;
+	background-size: cover
+}
+#testimonials #mcphersons {
+	background: url(http://webbies.co/wp-content/themes/webbies/images/testimonial-mcphersons.jpg) no-repeat center center;
+	background-size: cover
+}
+#testimonials #lorraines {
+	background: url(images/testimonial-lorraines.jpg) no-repeat center center;
+	background-size: cover
+}
+#testimonials .quote {
+	font-size: 1.2em;
+	line-height: 110%;
+	font-weight: 400
+}
+#testimonials .quote .more, #testimonials .customer {
+	opacity: 0;
+	font-size: 0;
+	line-height: 0;
+	padding-top: 10px
+}
+#testimonials .quote:hover .more {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 100;
+	display: block;
+	opacity: 1;
+	font-size: .8em;
+	line-height: 120%
+}
+#testimonials .quote:hover .customer {
+	display: block;
+	font-size: .7em;
+	text-align: right
+}
+#testimonials .quote .intro::after {
+	content: '...'
+}
+#testimonials .quote:hover .intro::after {
+	content: ''
+}
+footer {
+	background: #586D74;
+	color: #fff;
+	font-size: .8em;
+	padding: 20px 0 40px
+}
+footer a:hover {
+	color: #fff!important
+}
+footer .phone {
+	font-size: 1.4em;
+	font-weight: 700;
+	color: #E0E6AE
+}
+footer .navbar {
+	margin-bottom: 0;
+	min-height: 0
+}
+footer .navbar-default {
+	background-color: transparent;
+	border: none;
+	margin-right: 40px
+}
+footer .navbar-nav>li a {
+	padding-top: 0;
+	padding-bottom: 0;
+	text-decoration: underline;
+	color: #EEC856!important
+}
+.icon_div {
+	margin: 166px 0 34px;
+	position: absolute
+}
+.ne_top {
+	color: #fff;
+	text-align: center
+}
+.icn1 {
+	background: no-repeat center;
+	height: 10em;
+	margin: auto
+}
+.button {
+	background-color: #fff;
+	border: none;
+	color: #4FABA4;
+	padding: 10px;
+	margin-top: 8px;
+	padding-right: 45px;
+	padding-left: 50px
+}
+.top {
+	margin-top: 20px
+}
+.top9 {
+	margin-top: 12px
+}
+.top3 {
+	margin-top: 66px
+}
+.soan {
+	font-family: 'tisapro'
+}
+.soan1 {
+	font-size: 2.5em;
+	padding-bottom: 12px
+}
+.soan2 {
+	font-size: 16px;
+	line-height: 1.6
+}
+.offer {
+	padding: 40px;
+	padding-top: 0;
+	height: 15em
+}
+.offer_text {
+	width: 83%;
+	margin: auto;
+	color: #696969;
+	font-family: 'tisapro';
+	font-size: 18px;
+	text-align: center;
+	line-height: 2;
+	margin-top: 20px
+}
+.button2 {
+	background-color: #54bbb2;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	width: 232px
+}
+.btnText {
+	font-family: geogrotesque-medium-webfont;
+	color: #4FABA4
+}
+.btnTextWhite {
+	color: #fff
+}
+.button4 {
+	color: #54bbb2;
+	border: none;
+	display: inline-block;
+	padding: 11px 60px;
+	border-radius: 0;
+	text-align: center;
+	font-size: 18px;
+	background: #fff
+}
+.button5 {
+	border: none;
+	background-color: #54bbb2;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	padding-right: 50px;
+	padding-left: 50px
+}
+.offer_btn {
+	text-align: center
+}
+div#services {
+	background: url(../../uploads/2016/03/servicesbg-min.jpg);
+	color: #FFF
+}
+.perc {
+	color: #FFF;
+	font-size: 100px;
+	line-height: 100px
+}
+.advntg {
+	padding-top: 0;
+	height: 20em
+}
+.advntg_h {
+	color: #393939;
+	font-size: 18px;
+	padding-top: 23px;
+	font-family: 'geogrotesque-light-webfont'
+}
+div.testimonials {
+	background: url(../../uploads/2016/03/testimonials-min.jpg);
+	color: #FFF
+}
+img.icon {
+	width: 50%;
+	background: #fff;
+	border-radius: 50%;
+	height: 100%;
+	padding-top: -10px
+}
+.testim {
+	font-size: 20px;
+	padding-top: 20px
+}
+.f_topbox input[type=text] {
+	background: none;
+	border-bottom: 1px dashed #ccc;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	font-size: 16px;
+	margin-bottom: 14px;
+	padding: 8px 16px 8px 12px;
+	width: 100%;
+	font-family: 'opensans-light-webfont';
+	font-weight: 300;
+	font-style: italic;
+	color: #000
+}
+.f_topbox input[type=submit] {
+	border: 2px solid #46eca0;
+	border-radius: 2px;
+	color: #000;
+	display: inline-block;
+	font-family: 'OpenSansBold';
+	padding: 5px 50px;
+	text-align: center;
+	font-size: 16px;
+	background: none
+}
+.frmcr {
+	height: 48px
+}
+.form_control {
+	outline: 0;
+	display: block;
+	font-family: 'tisapro';
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #696969;
+	background: none;
+	background-image: none;
+	border: 0;
+	border-bottom: 1px solid #696969;
+	border-radius: 0
+}
+.input_group_addon {
+	padding: 6px 12px
+}
+.input_group_addon, .input-group-btn {
+	width: 1%;
+	white-space: nowrap;
+	vertical-align: middle
+}
+.input_group_addon, .input-group-btn, .input-group .form-control {
+	display: table-cell
+}
+.frm_button {
+	border: none;
+	color: #fff;
+	display: inline-block;
+	padding: 11px 100px;
+	border-radius: 0;
+	text-align: center;
+	font-size: 18px;
+	background: #54bbb2
+}
+.ghk {
+	margin-top: 24px;
+	margin-left: 60px
+}
+.contt {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: -7px;
+	line-height: 31px
+}
+.contc {
+	width: 50%;
+	margin: auto
+}
+.contc2 {
+	text-align: center;
+	margin-top: 40px
+}
+select#location {
+	width: 95%;
+	padding-left: 10px;
+	padding-bottom: 11px;
+	border: 0;
+	border-bottom: 1px solid #696969;
+	color: #696969;
+	font-size: 14px;
+	font-family: 'tisapro';
+	outline: 0;
+	background: none
+}
+.dis_b {
+	display: block
+}
+.dis_n {
+	display: none
+}
+.dis_b2 {
+	display: initial
+}
+.dis_n2 {
+	display: none
+}
+.mrg_ato {
+	float: none;
+	margin: auto
+}
+.carousel-control:hover, .carousel-control:focus {
+	color: #fff;
+	text-decoration: none;
+	filter: alpha(opacity=90);
+	outline: 0;
+	opacity: .9
+}
+::-webkit-input-placeholder {
+color:#696969
+}
+:-moz-placeholder {
+color:#696969
+}
+::-moz-placeholder {
+color:#696969
+}
+:-ms-input-placeholder {
+color:#696969
+}
+.CLR {
+	color: #fff
+}
+.top2 {
+	margin-top: 120px
+}
+.top4 {
+	margin-top: 80px
+}
+.top5 {
+	margin-top: 55px;
+	margin-bottom: 35px
+}
+.top6 {
+	margin-top: 55px;
+	margin-bottom: 43px
+}
+.top7 {
+	padding-top: 45px
+}
+.top8 {
+	margin-top: 35px
+}
+.clr2 {
+	color: #54bbb2
+}
+.testms {
+	color: #393939;
+	font-size: 3em;
+	font-family: 'geogrotesque-medium-webfont';
+	text-align: center;
+	padding-top: 75px
+}
+.testms1 {
+	background: url(images/testimonial.jpg)
+}
+div#testms2 {
+	margin-top: 30px
+}
+.sldr_p {
+	padding-top: 15px;
+	line-height: 25px;
+	font-family: 'Georgia';
+	color: #fff;
+	font-size: 15px;
+	text-shadow: none;
+	text-align: left
+}
+.car {
+	bottom: -56px
+}
+.pdd_btm {
+	padding-bottom: 30px
+}
+nav.navbar.navbar-default.navbar-fixed-top.bkg_wh.inbody {
+	background: #f0f7f7
+}
+.con1 {
+	font-size: 20px;
+	font-family: 'geogrotesque-medium-webfont';
+	color: #dbeeec
+}
+.con2 {
+	width: 75%;
+	line-height: 80px;
+	font-size: 75px;
+	padding: 0 120px 20px
+}
+.con_h2 {
+	text-align: left;
+	font-family: 'geogrotesque-semibold-webfont';
+	font-size: 40px
+}
+.con_text {
+	color: #999;
+	font-family: 'tisapro';
+	font-size: 15px;
+	text-align: left;
+	line-height: 1.6
+}
+.con_no {
+	color: #898989;
+	font-size: 18px;
+	line-height: 3
+}
+.con_advs {
+	color: #c2c1c1;
+	font-size: 17px
+}
+footer {
+	background: #494949
+}
+ul {
+	list-style-type: none
+}
+.add {
+	font-family: 'geogrotesque-light-webfont'
+}
+.perctge {
+	font-family: 'geogrotesque-medium-webfont';
+	color: #54bbb2;
+	font-size: 70px;
+	float: left;
+	padding: 0;
+	margin: 0;
+	line-height: 53px;
+	padding-right: 13px
+}
+.proc_text {
+	margin: auto;
+	float: none;
+	color: #696969;
+	font-family: 'tisapro';
+	font-size: 16px;
+	text-align: left;
+	padding-right: 28px;
+	line-height: 1.3;
+	padding-left: 16px;
+	width: 264px
+}
+.proc_bg {
+	background: url(images/process_bg.png);
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: #fff;
+	font-family: 'tisapro';
+	font-size: 16px
+}
+.arl_text {
+	padding: 5px;
+	height: 120px;
+	margin-top: 15px
+}
+.li {
+	background: url(../../uploads/2016/03/le_ar-min.png) top right no-repeat;
+	padding-right: 30px;
+	background-position-y: 14px
+}
+.li2 {
+	background: url(../../uploads/2016/03/down_ar-min.png) center bottom no-repeat;
+	padding-right: 16px
+}
+.li3 {
+	background: url(../../uploads/2016/03/ar_lft-min.png) top right no-repeat;
+	padding-right: 30px;
+	background-position-y: 14px
+}
+.ft_1 {
+	color: #dbeeec;
+	font-size: 18px
+}
+.ft_2 {
+	color: #fff;
+	font-size: 45px;
+	font-family: 'geogrotesque-semibold-webfont'
+}
+.bttn3 {
+	outline: 0;
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background: none;
+	border: 2px solid #fff
+}
+.ft_3 {
+	padding-top: 35px;
+	text-align: center
+}
+.imf_abs {
+	position: absolute;
+	left: -64px;
+	top: 85px
+}
+.pad {
+	padding: 4px
+}
+.inner1 {
+	height: 6em;
+	padding-top: 58px;
+	text-align: center;
+	color: #393939;
+	font-size: 35px
+}
+.inner_text {
+	font-size: 15px;
+	font-family: 'tisapro';
+	color: #696969;
+	line-height: 23px;
+	padding-right: 10px
+}
+.ispan {
+	color: #54bbb2;
+	font-size: 18px;
+	line-height: 1.6
+}
+.width_all {
+	width: 75%;
+	border: 1px solid red
+}
+a.left.carousel-control {
+	margin-left: 15%
+}
+a.right.carousel-control {
+	margin-right: 13%
+}
+.cor_with {
+	width: 200px;
+	margin: auto
+}
+.form-group {
+	margin-bottom: 15px;
+	margin-left: 20px
+}
+.ofr {
+	margin-bottom: 44px
+}
+.ofr_crlc {
+	width: 87%;
+	margin: auto
+}
+.ct_sub {
+	padding-top: 44px
+}
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+	right: 20%;
+	margin-right: -10px
+}
+.headerBig {
+	padding-top: 30px;
+	padding-bottom: 30px
+}
+.parentTxtDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+.only1 {
+	margin: auto;
+	float: none;
+	text-align: center
+}
+.carousel {
+	height: 100%;
+	margin-bottom: 80px
+}
+.carou {
+	height: 100%;
+	background: url(../../uploads/2016/03/carousel-exoticanimals-min.jpg);
+	margin-bottom: 80px
+}
+.carousel-caption {
+	z-index: 0;
+	/*top: 25%*/
+}
+.carousel .item {
+	height: 670px
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%
+}
+.marketing .col-lg-4 {
+	margin-bottom: 20px;
+	text-align: center
+}
+.marketing h2 {
+	font-weight: 400
+}
+.marketing .col-lg-4 p {
+	margin-right: 10px;
+	margin-left: 10px
+}
+.featurette-divider {
+	margin: 80px 0
+}
+.featurette-heading {
+	font-weight: 300;
+	line-height: 1
+}
+@media (min-width: 768px) {
+.navbar-wrapper {
+	margin-top: 20px
+}
+.navbar-wrapper .container {
+	padding-right: 15px;
+	padding-left: 15px
+}
+.navbar-wrapper .navbar {
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 4px
+}
+.carousel-caption p {
+	font-family: 'tisapro';
+	margin-bottom: 20px;
+	font-size: 21px;
+	line-height: 1.4
+}
+.featurette-heading {
+	font-size: 50px
+}
+}
+@media (min-width: 992px) {
+.featurette-heading {
+	margin-top: 120px
+}
+}
+.parentTxtDiv2 {
+	display: block;
+	justify-content: center;
+	align-items: center
+}
+.dis_b3 {
+	display: block
+}
+.dis_n3 {
+	display: none
+}
+.imf_abs22 {
+	position: absolute;
+	left: 295px;
+	width: 75px!important;
+	height: 75px!important;
+	margin-top: -147px
+}
+.active_img {
+	display: inline
+}
+a:focus, a:active, button, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, select::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+outline:none!important
+}
+
+
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+/*    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+*/    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+   /* font-size: 40px;*/
+}
+
+.intro .intro-body .intro-text {
+    /*font-size: 18px;*/
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
