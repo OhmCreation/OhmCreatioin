@@ -138,12 +138,12 @@ img.emoji {
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner fullheight" role="listbox">
+      <div class="carousel-inner fullheight"  role="listbox" style="background-color: rgba(255,204,128,0.4);">
         <div class="item active">
             
             
-            <div class="intro">
-            <div class="intro-body">
+            <div class="intro" >
+            <div class="intro-body" id="particles-js">
           <div class="container">
             <div class="carousel-caption">
               <h1 class="soan1">Code Ain't The End</h1>
@@ -280,7 +280,7 @@ img.emoji {
       <h2>What We Offer</h2>
       <div class="row top3">
         <div class="col-md-6 col-sm-6"> <img src="wp-content/uploads/2016/03/trangle-min.png" class="img-responsive center-block offer"> </div>
-        <div class="col-md-6 col-sm-6"> <img src="http://businesstc.com/wp-content/uploads/2017/01/screens.png" class="img-responsive center-block offer"> </div>
+        <div class="col-md-6 col-sm-6"> <img src="http://www.mobile-spy.com/images/smartphone-monitoring-software.png" class="img-responsive center-block offer"> </div>
         <div class="col-md-12 top">
           <p class="offer_text top">We aim to deliver excellent work in the shortest span of time. Our team comprises skilful people from all over the globe well versed with the profession and extremely effective. We work at a zero percent tolerance </p>
         </div>
@@ -292,9 +292,9 @@ img.emoji {
       </div>
     </div>
   </div>
-  <div class="page" id="services">
+  <div class="page" id="services" style="background-color: rgba(255,204,128,0.4)">
     <div class="content container">
-      <h2>What All is done</h2>
+      <h2>What All is done</h2> 
       <div class="row">
         <article class="service col-md-3 col-sm-3 col-xs-6"> 
           <!--	<span class="perc">80%</span>--> 
@@ -532,6 +532,23 @@ $(document).ready(function(){
 })
  
 </script>
+<script src="wp-json/particles/particles.js"></script>
+<script src="wp-json/particles/demo/js/app.js"></script>
+<script>
+  var count_particles, stats, update;
+  
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"http:\/\/webbies.co\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
