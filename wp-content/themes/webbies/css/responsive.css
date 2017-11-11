@@ -41,8 +41,8 @@ and (max-width: 1399px) {
 .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
     right: 50%;
     margin-right: -10px;
+    }
 }
-	}
 
 @media only screen 
 and (min-width: 1000px)
@@ -50,22 +50,21 @@ and (max-width: 1124px) {
 
 
 	.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
-    right:65%;
-    margin-right: -10px;
-}
+        right:65%;
+        margin-right: -10px;
+    }
 	.con2 {
-    width: 80%;
-    line-height: 80px;
-    font-size: 65px;
-    padding: 0px 100px 20px 101px;
+        width: 80%;
+        line-height: 80px;
+        font-size: 65px;
+        padding: 0px 100px 20px 101px;
+    }
+    .button5 {
+        padding-right: 36px;
+        padding-left:36px;
+        font-size: 16px;
+    }
 }
-.button5 {
- padding-right: 36px;
-    padding-left:36px;
-    font-size: 16px;
-
-}
-	}
 
 @media only screen 
 and (min-width: 768px)
@@ -311,9 +310,10 @@ a.left.carousel-control {
 a.right.carousel-control {
     margin-right:0;
 }
-.cor_with{    width: 150px;
+.cor_with{    
+    width: 150px;
     padding: 0 !important;
     margin: 30px auto;
-    text-align: center;}
-
-	}
+    text-align: center;
+    }
+}
