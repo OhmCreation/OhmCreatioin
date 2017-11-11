@@ -10,6 +10,12 @@ and (max-width: 2570px) {
 	.imf_abs {
     top: 116px;
 }
+#com1{
+    margin-left: 20%;
+}
+#com2,#com3{
+    margin-left: 15%;
+}
 	.carousel-caption {
     z-index: 10;
    /* top: 73%;*/
@@ -316,4 +322,13 @@ a.right.carousel-control {
     margin: 30px auto;
     text-align: center;
     }
+#com1{
+    margin-left:-20%;
+}
+#com2{
+    margin-left: -8%;
+}
+#com3{
+    margin-left: -30%;
+}
 }
